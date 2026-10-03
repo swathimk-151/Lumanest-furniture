@@ -1,0 +1,469 @@
+/* =========================================================
+LUMANEST LOGIN PAGE
+========================================================= */
+
+.auth-page {
+min-height: calc(100vh - 82px);
+
+padding: 55px 5%;
+
+background: #f8f5ef;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+/* =========================================================
+CONTAINER
+========================================================= */
+
+.auth-container {
+width: 100%;
+max-width: 1180px;
+
+min-height: 650px;
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+background: #ffffff;
+
+box-shadow:
+ 0 25px 70px rgba(29, 27, 24, 0.10);
+
+overflow: hidden;
+}
+
+
+/* =========================================================
+IMAGE
+========================================================= */
+
+.auth-image {
+position: relative;
+
+min-height: 650px;
+
+overflow: hidden;
+}
+
+.auth-image img {
+width: 100%;
+height: 100%;
+
+object-fit: cover;
+
+transition: transform 0.8s ease;
+}
+
+.auth-image:hover img {
+transform: scale(1.04);
+}
+
+.auth-image::after {
+content: "";
+
+position: absolute;
+
+inset: 0;
+
+background:
+ linear-gradient(
+   to top,
+   rgba(20, 18, 16, 0.72),
+   rgba(20, 18, 16, 0.05)
+ );
+}
+
+.auth-image-overlay {
+position: absolute;
+
+z-index: 2;
+
+left: 50px;
+bottom: 50px;
+
+color: #ffffff;
+}
+
+.auth-image-overlay p {
+margin-bottom: 15px;
+
+font-size: 11px;
+font-weight: 700;
+
+letter-spacing: 2px;
+}
+
+.auth-image-overlay h2 {
+margin: 0;
+
+font-family: Georgia, "Times New Roman", serif;
+
+font-size: 40px;
+font-weight: 400;
+
+line-height: 1.12;
+
+letter-spacing: -1px;
+}
+
+
+/* =========================================================
+FORM SIDE
+========================================================= */
+
+.auth-form-wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+
+padding: 60px;
+}
+
+.auth-form-content {
+width: 100%;
+max-width: 410px;
+}
+
+
+/* =========================================================
+LOGO
+========================================================= */
+
+.auth-logo {
+display: inline-block;
+
+margin-bottom: 45px;
+
+color: #1d1b18 !important;
+
+font-family: Georgia, "Times New Roman", serif;
+
+font-size: 28px;
+font-weight: 700;
+
+letter-spacing: -1px;
+
+text-decoration: none;
+}
+
+.auth-logo span {
+font-style: italic;
+
+font-weight: 400;
+}
+
+
+/* =========================================================
+HEADING
+========================================================= */
+
+.auth-small-title {
+margin-bottom: 14px;
+
+color: #777168;
+
+font-size: 11px;
+font-weight: 700;
+
+letter-spacing: 2px;
+}
+
+.auth-heading h1 {
+margin-bottom: 18px;
+
+color: #1d1b18;
+
+font-family: Georgia, "Times New Roman", serif;
+
+font-size: 42px;
+font-weight: 400;
+
+line-height: 1.08;
+
+letter-spacing: -1.5px;
+}
+
+.auth-heading h1 em {
+font-weight: 400;
+}
+
+.auth-heading > p:last-child {
+margin-bottom: 35px;
+
+color: #777168;
+
+font-size: 13px;
+
+line-height: 1.7;
+}
+
+
+/* =========================================================
+FORM
+========================================================= */
+
+.auth-form {
+display: flex;
+
+flex-direction: column;
+
+gap: 20px;
+}
+
+.form-group {
+display: flex;
+
+flex-direction: column;
+
+gap: 8px;
+}
+
+.form-group label {
+color: #302d29;
+
+font-size: 12px;
+font-weight: 600;
+}
+
+.form-group input {
+width: 100%;
+height: 50px;
+
+padding: 0 15px;
+
+border: 1px solid #d8d2c8;
+
+background: #faf9f6;
+
+color: #1d1b18;
+
+font-size: 13px;
+
+outline: none;
+
+transition:
+ border-color 0.3s ease,
+ background 0.3s ease;
+}
+
+.form-group input:focus {
+border-color: #1d1b18;
+
+background: #ffffff;
+}
+
+.form-group input::placeholder {
+color: #aaa39a;
+}
+
+
+/* =========================================================
+ERROR
+========================================================= */
+
+.auth-error {
+margin-top: -5px;
+
+color: #a33d35;
+
+font-size: 12px;
+
+line-height: 1.5;
+}
+
+
+/* =========================================================
+SUBMIT
+========================================================= */
+
+.auth-submit {
+width: 100%;
+height: 52px;
+
+margin-top: 5px;
+
+border: 1px solid #1d1b18;
+
+background: #1d1b18;
+
+color: #ffffff;
+
+font-size: 12px;
+font-weight: 600;
+
+letter-spacing: 1px;
+
+cursor: pointer;
+
+transition:
+ background 0.3s ease,
+ color 0.3s ease,
+ transform 0.3s ease;
+}
+
+.auth-submit:hover {
+background: #e9e3d8;
+
+color: #1d1b18;
+
+transform: translateY(-2px);
+}
+
+
+/* =========================================================
+DIVIDER
+========================================================= */
+
+.auth-divider {
+margin: 30px 0;
+
+display: flex;
+
+align-items: center;
+
+gap: 12px;
+}
+
+.auth-divider span {
+flex: 1;
+
+height: 1px;
+
+background: #e1ddd5;
+}
+
+.auth-divider p {
+margin: 0;
+
+color: #aaa39a;
+
+font-size: 10px;
+
+letter-spacing: 1px;
+}
+
+
+/* =========================================================
+SWITCH
+========================================================= */
+
+.auth-switch {
+margin: 0;
+
+color: #777168;
+
+font-size: 13px;
+
+text-align: center;
+}
+
+.auth-switch a {
+margin-left: 5px;
+
+color: #1d1b18 !important;
+
+font-weight: 600;
+
+text-decoration: underline !important;
+}
+
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+.auth-page {
+ padding: 40px 4%;
+}
+
+.auth-container {
+ grid-template-columns: 0.85fr 1fr;
+}
+
+.auth-form-wrapper {
+ padding: 45px;
+}
+
+.auth-image-overlay {
+ left: 35px;
+ bottom: 35px;
+}
+
+.auth-image-overlay h2 {
+ font-size: 32px;
+}
+
+.auth-heading h1 {
+ font-size: 35px;
+}
+}
+
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+.auth-page {
+ min-height: auto;
+
+ padding: 25px 18px 50px;
+}
+
+.auth-container {
+ grid-template-columns: 1fr;
+
+ min-height: auto;
+}
+
+.auth-image {
+ min-height: 300px;
+
+ height: 300px;
+}
+
+.auth-image-overlay {
+ left: 30px;
+ bottom: 30px;
+}
+
+.auth-image-overlay h2 {
+ font-size: 30px;
+}
+
+.auth-form-wrapper {
+ padding: 45px 28px 50px;
+}
+
+.auth-logo {
+ margin-bottom: 35px;
+}
+}
+
+
+/* =========================================================
+SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+.auth-form-wrapper {
+ padding: 35px 20px 40px;
+}
+
+.auth-heading h1 {
+ font-size: 32px;
+}
+
+.auth-image {
+ min-height: 260px;
+ height: 260px;
+}
+}

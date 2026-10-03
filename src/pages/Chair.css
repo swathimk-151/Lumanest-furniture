@@ -1,0 +1,869 @@
+/* =================================
+   CHAIRS PAGE
+================================= */
+
+.chairs-page {
+  overflow: hidden;
+}
+
+
+/* =================================
+   HERO
+================================= */
+
+.chairs-hero {
+  min-height: 72vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 100px 8%;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(25, 22, 19, 0.75),
+      rgba(25, 22, 19, 0.25)
+    ),
+    url("https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=2200&q=90")
+      center/cover;
+}
+
+.chairs-hero-content {
+  max-width: 800px;
+
+  animation: chairsHero 1s ease forwards;
+}
+
+.chairs-hero-content > span {
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+.chairs-hero h1 {
+  font-size: clamp(60px, 9vw, 115px);
+
+  line-height: 0.88;
+
+  letter-spacing: -5px;
+
+  margin: 25px 0 30px;
+}
+
+.chairs-hero h1 i {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.chairs-hero p {
+  max-width: 560px;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.82);
+}
+
+@keyframes chairsHero {
+
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =================================
+   INTRO
+================================= */
+
+.chairs-intro {
+  max-width: 1400px;
+
+  margin: auto;
+
+  padding: 120px 5%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 3fr;
+
+  gap: 80px;
+}
+
+.chairs-intro-number {
+  font-size: 12px;
+
+  letter-spacing: 3px;
+
+  color: #777168;
+}
+
+.chairs-intro-content h2 {
+  font-size: clamp(45px, 6vw, 80px);
+
+  line-height: 0.92;
+
+  letter-spacing: -4px;
+
+  margin-bottom: 30px;
+}
+
+.chairs-intro-content h2 i {
+  font-family: Georgia, serif;
+
+  font-weight: 400;
+}
+
+.chairs-intro-content p {
+  max-width: 650px;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: #69645c;
+}
+
+
+/* =================================
+   FEATURED CHAIR
+================================= */
+
+.chair-feature {
+  display: grid;
+
+  grid-template-columns: 1.2fr 1fr;
+
+  background: #e9e3d8;
+}
+
+.chair-feature-image {
+  position: relative;
+
+  min-height: 700px;
+
+  overflow: hidden;
+}
+
+.chair-feature-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 1s ease;
+}
+
+.chair-feature-image:hover img {
+  transform: scale(1.04);
+}
+
+.feature-number {
+  position: absolute;
+
+  bottom: 25px;
+  left: 25px;
+
+  color: white;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+}
+
+.chair-feature-content {
+  padding: 12%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.chair-feature-content > span {
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  color: #777168;
+}
+
+.chair-feature-content h2 {
+  font-size: clamp(48px, 6vw, 82px);
+
+  line-height: 0.88;
+
+  letter-spacing: -4px;
+
+  margin: 25px 0;
+}
+
+.chair-feature-content h2 i {
+  font-family: Georgia, serif;
+
+  font-weight: 400;
+}
+
+.chair-feature-content > p {
+  max-width: 500px;
+
+  line-height: 1.8;
+
+  color: #69645c;
+
+  margin-bottom: 35px;
+}
+
+
+/* DETAILS */
+
+.feature-details {
+  display: flex;
+
+  gap: 70px;
+
+  margin-bottom: 35px;
+}
+
+.feature-details div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.feature-details span {
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  color: #777168;
+}
+
+.feature-details strong {
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+
+/* BUTTON */
+
+.feature-button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  width: fit-content;
+
+  border: 1px solid #1d1b18;
+
+  background: transparent;
+
+  padding: 15px 23px;
+
+  transition: 0.35s;
+}
+
+.feature-button:hover {
+  background: #1d1b18;
+
+  color: white;
+
+  gap: 20px;
+}
+
+
+/* =================================
+   PRODUCTS
+================================= */
+
+.chairs-products {
+  max-width: 1500px;
+
+  margin: auto;
+
+  padding: 140px 5%;
+}
+
+.chairs-section-heading {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: end;
+
+  gap: 40px;
+
+  margin-bottom: 55px;
+}
+
+.chairs-section-heading > div > span {
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  color: #777168;
+}
+
+.chairs-section-heading h2 {
+  font-size: clamp(42px, 5vw, 70px);
+
+  line-height: 0.95;
+
+  letter-spacing: -3px;
+
+  margin-top: 20px;
+}
+
+.chairs-section-heading h2 i {
+  font-family: Georgia, serif;
+
+  font-weight: 400;
+}
+
+.chairs-section-heading > p {
+  max-width: 350px;
+
+  color: #69645c;
+
+  line-height: 1.7;
+}
+
+
+/* TOOLBAR */
+
+.chairs-toolbar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-top: 1px solid #d7d1c7;
+
+  border-bottom: 1px solid #d7d1c7;
+
+  padding: 20px 0;
+
+  margin-bottom: 40px;
+}
+
+.chair-category-filter {
+  display: flex;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+}
+
+.chair-category-filter button {
+  position: relative;
+
+  border: none;
+
+  background: transparent;
+
+  color: #777168;
+
+  font-size: 13px;
+
+  padding: 4px 0;
+
+  transition: 0.3s;
+}
+
+.chair-category-filter button::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -5px;
+
+  left: 0;
+
+  width: 0;
+
+  height: 1px;
+
+  background: #1d1b18;
+
+  transition: 0.3s;
+}
+
+.chair-category-filter button:hover,
+.chair-category-filter button.active {
+  color: #1d1b18;
+}
+
+.chair-category-filter button.active::after {
+  width: 100%;
+}
+
+.chair-sort {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.chair-sort select {
+  border: none;
+
+  background: transparent;
+
+  outline: none;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+
+/* =================================
+   PRODUCT GRID
+================================= */
+
+.chairs-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 50px 22px;
+}
+
+.chair-product-image {
+  position: relative;
+
+  height: 500px;
+
+  overflow: hidden;
+
+  background: #eee8de;
+}
+
+.chair-product-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.8s
+    cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.chair-product:hover
+.chair-product-image img {
+  transform: scale(1.07);
+}
+
+
+/* TAG */
+
+.chair-tag {
+  position: absolute;
+
+  z-index: 3;
+
+  top: 18px;
+  left: 18px;
+
+  background: white;
+
+  padding: 7px 11px;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* WISHLIST */
+
+.chair-wishlist {
+  position: absolute;
+
+  z-index: 4;
+
+  top: 15px;
+  right: 15px;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  background: white;
+
+  display: grid;
+
+  place-items: center;
+
+  transition: 0.3s;
+}
+
+.chair-wishlist:hover,
+.chair-wishlist.liked {
+  color: #9b5149;
+
+  transform: scale(1.08);
+}
+
+
+/* CART */
+
+.chair-add-cart {
+  position: absolute;
+  z-index: 4;
+
+  bottom: 18px;
+  left: 50%;
+
+  transform: translate(-50%, 25px);
+
+  opacity: 0;
+  visibility: hidden;
+
+  border: none;
+
+  background: #1d1b18;
+  color: white;
+
+  padding: 14px 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  white-space: nowrap;
+
+  transition: 0.4s ease;
+}
+
+.chair-product:hover .chair-add-cart {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+
+/* PRODUCT INFO */
+
+.chair-product-info {
+  padding-top: 17px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.chair-product-info h3 {
+  font-size: 17px;
+
+  font-weight: 500;
+
+  margin-bottom: 7px;
+}
+
+.chair-product-info p {
+  font-size: 12px;
+
+  color: #777168;
+}
+
+.chair-product-info strong {
+  font-size: 14px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+
+/* =================================
+   MATERIAL SECTION
+================================= */
+
+.chair-material {
+  display: grid;
+
+  grid-template-columns: 1.1fr 1fr;
+
+  background: #eee9df;
+}
+
+.chair-material-image {
+  min-height: 700px;
+
+  overflow: hidden;
+}
+
+.chair-material-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 1s ease;
+}
+
+.chair-material-image:hover img {
+  transform: scale(1.05);
+}
+
+.chair-material-content {
+  padding: 12%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.chair-material-content > span {
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  color: #777168;
+}
+
+.chair-material-content h2 {
+  font-size: clamp(45px, 5vw, 75px);
+
+  line-height: 0.9;
+
+  letter-spacing: -4px;
+
+  margin: 25px 0;
+}
+
+.chair-material-content h2 i {
+  font-family: Georgia, serif;
+
+  font-weight: 400;
+}
+
+.chair-material-content > p {
+  max-width: 520px;
+
+  color: #69645c;
+
+  line-height: 1.8;
+
+  margin-bottom: 30px;
+}
+
+
+/* MATERIAL LIST */
+
+.material-list {
+  border-top: 1px solid #cec7bc;
+}
+
+.material-list div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #cec7bc;
+}
+
+.material-list span {
+  font-size: 10px;
+
+  color: #777168;
+}
+
+.material-list strong {
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+
+/* =================================
+   CTA
+================================= */
+
+.chairs-cta {
+  min-height: 550px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 80px 6%;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      rgba(25, 22, 19, 0.65),
+      rgba(25, 22, 19, 0.65)
+    ),
+    url("https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=2000&q=90")
+      center/cover;
+}
+
+.chairs-cta > span {
+  font-size: 11px;
+
+  letter-spacing: 3px;
+}
+
+.chairs-cta h2 {
+  font-size: clamp(50px, 7vw, 90px);
+
+  line-height: 0.9;
+
+  letter-spacing: -4px;
+
+  margin: 25px 0;
+}
+
+.chairs-cta h2 i {
+  font-family: Georgia, serif;
+
+  font-weight: 400;
+}
+
+.chairs-cta p {
+  max-width: 500px;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  line-height: 1.8;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1000px) {
+
+  .chairs-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .chair-product-image {
+    height: 460px;
+  }
+
+  .chair-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .chair-feature-image {
+    min-height: 550px;
+  }
+
+  .chair-material {
+    grid-template-columns: 1fr;
+  }
+
+  .chair-material-image {
+    min-height: 550px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .chairs-hero {
+    min-height: 75vh;
+
+    padding: 80px 7%;
+  }
+
+  .chairs-hero h1 {
+    font-size: 60px;
+
+    letter-spacing: -3px;
+  }
+
+  .chairs-intro {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    padding: 90px 7%;
+  }
+
+  .chairs-section-heading {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .chairs-toolbar {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .chairs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chair-product-image {
+    height: 500px;
+  }
+
+  .chair-feature-content {
+    padding: 80px 7%;
+  }
+
+  .chair-material-content {
+    padding: 80px 7%;
+  }
+
+  .chairs-cta h2 {
+    font-size: 55px;
+
+    letter-spacing: -2px;
+  }
+
+}

@@ -1,0 +1,61 @@
+/* =========================================================
+   LUMANEST SIGNUP PAGE
+========================================================= */
+
+.signup-page {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+/* Slightly taller because signup has more fields */
+
+.signup-page .auth-container {
+  min-height: 700px;
+}
+
+.signup-page .auth-image {
+  min-height: 700px;
+}
+
+/* Form spacing */
+
+.signup-page .auth-form {
+  gap: 16px;
+}
+
+.signup-page .auth-form-content {
+  max-width: 420px;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+  .signup-page .auth-container {
+    min-height: 650px;
+  }
+
+  .signup-page .auth-image {
+    min-height: 650px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .signup-page {
+    padding-top: 25px;
+  }
+
+  .signup-page .auth-container {
+    min-height: auto;
+  }
+
+  .signup-page .auth-image {
+    min-height: 280px;
+    height: 280px;
+  }
+
+  .signup-page .auth-form {
+    gap: 17px;
+  }
+}

@@ -1,0 +1,1219 @@
+/* =========================================
+   BEDROOM PAGE
+========================================= */
+
+.bedroom-page {
+  background: #f8f5ef;
+  color: #1d1b18;
+  overflow: hidden;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.bedroom-hero {
+  min-height: 90vh;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=2000&q=90");
+
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+.bedroom-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(19, 17, 15, 0.72),
+      rgba(19, 17, 15, 0.3),
+      rgba(19, 17, 15, 0.05)
+    );
+}
+
+.bedroom-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2),
+      transparent 45%,
+      rgba(0, 0, 0, 0.35)
+    );
+
+  z-index: 1;
+}
+
+.bedroom-hero-content {
+  position: relative;
+  z-index: 3;
+
+  margin-left: 9%;
+  max-width: 700px;
+
+  color: #fff;
+
+  animation: bedroomHeroReveal 1.2s ease forwards;
+}
+
+.bedroom-eyebrow {
+  display: block;
+
+  margin-bottom: 25px;
+
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.bedroom-hero-content h1 {
+  font-size: clamp(60px, 7vw, 108px);
+
+  line-height: 0.93;
+  letter-spacing: -4px;
+
+  font-weight: 400;
+}
+
+.bedroom-hero-content h1 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.bedroom-hero-content p {
+  max-width: 490px;
+
+  margin-top: 32px;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.bedroom-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 35px;
+  padding: 15px 25px;
+
+  background: #f8f5ef;
+  color: #1d1b18;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.bedroom-hero-btn:hover {
+  transform: translateY(-4px);
+  background: #fff;
+}
+
+.bedroom-hero-scroll {
+  position: absolute;
+  z-index: 3;
+
+  right: 7%;
+  bottom: 35px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.bedroom-hero-scroll span {
+  width: 35px;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes bedroomHeroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(45px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   INTRO
+========================================= */
+
+.bedroom-intro {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  gap: 70px;
+
+  padding: 135px 9%;
+}
+
+.bedroom-intro-index {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.bedroom-intro-index span {
+  color: #918a80;
+  font-size: 11px;
+}
+
+.bedroom-intro-index p {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.bedroom-intro-content {
+  max-width: 900px;
+}
+
+.bedroom-intro-content h2 {
+  font-size: clamp(43px, 5vw, 72px);
+
+  line-height: 1.03;
+  letter-spacing: -2.5px;
+
+  font-weight: 400;
+}
+
+.bedroom-intro-content h2 em {
+  font-family: Georgia, serif;
+}
+
+.bedroom-intro-content > p {
+  max-width: 610px;
+
+  margin-top: 35px;
+
+  color: #706a62;
+
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* =========================================
+   EDITORIAL
+========================================= */
+
+.bedroom-editorial {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+
+  min-height: 700px;
+
+  background: #e8e1d6;
+}
+
+.bedroom-editorial-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.bedroom-editorial-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 700px;
+
+  object-fit: cover;
+
+  transition: transform 1s ease;
+}
+
+.bedroom-editorial:hover
+.bedroom-editorial-image img {
+  transform: scale(1.04);
+}
+
+.bedroom-editorial-label {
+  position: absolute;
+
+  left: 35px;
+  bottom: 35px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  padding: 18px 20px;
+
+  background: rgba(255, 255, 255, 0.88);
+
+  backdrop-filter: blur(10px);
+}
+
+.bedroom-editorial-label span {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.bedroom-editorial-label strong {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.bedroom-editorial-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 80px;
+}
+
+.section-label {
+  display: block;
+
+  margin-bottom: 25px;
+
+  color: #827a70;
+
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+}
+
+.bedroom-editorial-content h2 {
+  font-size: clamp(43px, 4vw, 65px);
+
+  line-height: 1;
+  letter-spacing: -2px;
+
+  font-weight: 400;
+}
+
+.bedroom-editorial-content h2 em {
+  font-family: Georgia, serif;
+}
+
+.bedroom-editorial-content > p {
+  max-width: 450px;
+
+  margin-top: 30px;
+
+  color: #716a61;
+
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.bedroom-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+
+  margin-top: 50px;
+  padding-top: 25px;
+
+  border-top: 1px solid rgba(29, 27, 24, 0.15);
+}
+
+.bedroom-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.bedroom-details span {
+  color: #9b9387;
+  font-size: 10px;
+}
+
+.bedroom-details strong {
+  font-size: 12px;
+}
+
+.bedroom-details p {
+  color: #81796e;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   CREATE YOUR BEDROOM CTA
+========================================= */
+
+.bedroom-create-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+
+  width: fit-content;
+
+  margin-top: 45px;
+  padding: 16px 6px 16px 22px;
+
+  background: #1d1b18;
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  overflow: hidden;
+
+  transition:
+    color 0.4s ease,
+    transform 0.3s ease;
+}
+
+/* Sliding background */
+
+.bedroom-create-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: #e9e3d8;
+
+  transform: translateX(-101%);
+  transition: transform 0.45s ease;
+
+  z-index: 0;
+}
+
+/* Text */
+
+.bedroom-create-btn span:first-child {
+  position: relative;
+  z-index: 2;
+}
+
+/* Arrow box */
+
+.bedroom-create-arrow {
+  position: relative;
+  z-index: 2;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f8f5ef;
+  color: #1d1b18;
+
+  transition:
+    transform 0.4s ease,
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+/* Hover */
+
+.bedroom-create-btn:hover {
+  color: #1d1b18;
+  transform: translateY(-4px);
+}
+
+.bedroom-create-btn:hover::before {
+  transform: translateX(0);
+}
+
+.bedroom-create-btn:hover .bedroom-create-arrow {
+  transform: rotate(45deg);
+
+  background: #1d1b18;
+  color: #fff;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .bedroom-create-btn {
+    width: 100%;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+
+  .bedroom-create-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* =========================================
+   PRODUCTS
+========================================= */
+
+.bedroom-products-section {
+  padding: 135px 7%;
+}
+
+.bedroom-products-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  margin-bottom: 60px;
+}
+
+.bedroom-products-heading h2 {
+  font-size: clamp(45px, 5vw, 70px);
+
+  line-height: 1;
+  letter-spacing: -2px;
+
+  font-weight: 400;
+}
+
+.bedroom-products-heading h2 em {
+  font-family: Georgia, serif;
+}
+
+.bedroom-products-heading > p {
+  max-width: 280px;
+
+  color: #777168;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   FILTER
+========================================= */
+
+.bedroom-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 35px;
+  padding: 18px 0;
+
+  border-top: 1px solid #ddd6ca;
+  border-bottom: 1px solid #ddd6ca;
+}
+
+.bedroom-categories {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bedroom-categories > svg {
+  margin-right: 10px;
+  color: #827b71;
+}
+
+.bedroom-categories button {
+  padding: 8px 12px;
+
+  border: none;
+  background: transparent;
+
+  color: #777168;
+
+  font-size: 11px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.bedroom-categories button:hover,
+.bedroom-categories button.active {
+  background: #1d1b18;
+  color: #fff;
+}
+
+.bedroom-sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bedroom-sort label {
+  color: #777168;
+  font-size: 11px;
+}
+
+.bedroom-sort select {
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #1d1b18;
+
+  font-size: 11px;
+}
+
+/* =========================================
+   PRODUCT GRID
+========================================= */
+
+.bedroom-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 55px 24px;
+}
+
+.bedroom-product-card {
+  animation: bedroomProductReveal 0.7s ease both;
+}
+
+@keyframes bedroomProductReveal {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bedroom-product-image {
+  position: relative;
+
+  height: 500px;
+
+  overflow: hidden;
+
+  background: #eee8de;
+}
+
+.bedroom-product-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.8s ease,
+    filter 0.5s ease;
+}
+
+.bedroom-product-card:hover
+.bedroom-product-image img {
+  transform: scale(1.07);
+}
+
+.bedroom-product-tag {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  padding: 8px 11px;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  font-size: 9px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.bedroom-wishlist {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  color: #1d1b18;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.bedroom-wishlist:hover {
+  transform: scale(1.1);
+}
+
+.bedroom-wishlist.liked {
+  background: #1d1b18;
+  color: #fff;
+}
+
+.bedroom-cart-btn {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: none;
+  background: #1d1b18;
+  color: #fff;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(15px);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+.bedroom-product-card:hover .bedroom-cart-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 700px) {
+  .bedroom-cart-btn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bedroom-product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding-top: 18px;
+}
+
+.bedroom-product-info h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bedroom-product-info p {
+  margin-top: 7px;
+
+  color: #898278;
+
+  font-size: 11px;
+}
+
+.bedroom-product-info strong {
+  font-size: 13px;
+}
+
+/* =========================================
+   PHILOSOPHY
+========================================= */
+
+.bedroom-philosophy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 700px;
+
+  background: #e9e3d8;
+}
+
+.bedroom-philosophy-image {
+  overflow: hidden;
+}
+
+.bedroom-philosophy-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 700px;
+
+  object-fit: cover;
+
+  transition: transform 1s ease;
+}
+
+.bedroom-philosophy:hover
+.bedroom-philosophy-image img {
+  transform: scale(1.04);
+}
+
+.bedroom-philosophy-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 90px 10%;
+}
+
+.bedroom-philosophy-content h2 {
+  font-size: clamp(45px, 5vw, 70px);
+
+  line-height: 1;
+  letter-spacing: -2px;
+
+  font-weight: 400;
+}
+
+.bedroom-philosophy-content h2 em {
+  font-family: Georgia, serif;
+}
+
+.bedroom-philosophy-content > p {
+  max-width: 500px;
+
+  margin-top: 30px;
+
+  color: #706a61;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.philosophy-points {
+  margin-top: 45px;
+}
+
+.philosophy-points > div {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+
+  gap: 5px 15px;
+
+  padding: 18px 0;
+
+  border-top: 1px solid rgba(29, 27, 24, 0.13);
+}
+
+.philosophy-points span {
+  grid-row: span 2;
+
+  color: #9b9387;
+
+  font-size: 10px;
+}
+
+.philosophy-points strong {
+  font-size: 13px;
+}
+
+.philosophy-points p {
+  color: #81796e;
+
+  font-size: 11px;
+}
+
+/* =========================================
+   GUIDE
+========================================= */
+
+.bedroom-guide {
+  padding: 130px 7%;
+}
+
+.bedroom-guide-heading {
+  margin-bottom: 65px;
+}
+
+.bedroom-guide-heading h2 {
+  font-size: clamp(45px, 5vw, 70px);
+
+  line-height: 1;
+  letter-spacing: -2px;
+
+  font-weight: 400;
+}
+
+.bedroom-guide-heading h2 em {
+  font-family: Georgia, serif;
+}
+
+.bedroom-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid #dcd5ca;
+}
+
+.bedroom-guide-card {
+  position: relative;
+
+  padding: 45px 35px;
+
+  border-right: 1px solid #dcd5ca;
+
+  transition:
+    background 0.4s ease,
+    transform 0.4s ease;
+}
+
+.bedroom-guide-card:last-child {
+  border-right: none;
+}
+
+.bedroom-guide-card:hover {
+  background: #eee9df;
+  transform: translateY(-8px);
+}
+
+.bedroom-guide-card > span {
+  color: #9b9387;
+
+  font-size: 10px;
+}
+
+.guide-icon {
+  margin-top: 55px;
+
+  font-family: Georgia, serif;
+
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.bedroom-guide-card h3 {
+  margin-top: 25px;
+
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.bedroom-guide-card p {
+  max-width: 280px;
+
+  margin-top: 15px;
+
+  color: #777168;
+
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.bedroom-cta {
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  color: #fff;
+
+  background-image:
+    linear-gradient(
+      rgba(20, 18, 15, 0.72),
+      rgba(20, 18, 15, 0.72)
+    ),
+    url("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2000&q=85");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bedroom-cta-content {
+  max-width: 700px;
+
+  padding: 40px;
+}
+
+.bedroom-cta-content > span {
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.bedroom-cta-content h2 {
+  margin-top: 25px;
+
+  font-size: clamp(52px, 7vw, 92px);
+
+  line-height: 0.95;
+  letter-spacing: -3px;
+
+  font-weight: 400;
+}
+
+.bedroom-cta-content h2 em {
+  font-family: Georgia, serif;
+}
+
+.bedroom-cta-content p {
+  margin-top: 30px;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 15px;
+}
+
+.bedroom-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 35px;
+  padding: 15px 25px;
+
+  background: #f8f5ef;
+  color: #1d1b18;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.bedroom-cta-btn:hover {
+  transform: translateY(-4px);
+  background: #fff;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .bedroom-intro {
+    padding: 100px 6%;
+    gap: 40px;
+  }
+
+  .bedroom-editorial {
+    grid-template-columns: 1fr;
+  }
+
+  .bedroom-editorial-image img {
+    min-height: 550px;
+  }
+
+  .bedroom-editorial-content {
+    padding: 75px 8%;
+  }
+
+  .bedroom-product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bedroom-philosophy {
+    grid-template-columns: 1fr;
+  }
+
+  .bedroom-philosophy-image img {
+    min-height: 500px;
+  }
+
+  .bedroom-philosophy-content {
+    padding: 80px 8%;
+  }
+
+  .bedroom-guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bedroom-guide-card {
+    border-right: none;
+    border-bottom: 1px solid #dcd5ca;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .bedroom-hero {
+    min-height: 78vh;
+
+    background-position: 60% center;
+  }
+
+  .bedroom-hero-content {
+    margin: 0 7%;
+  }
+
+  .bedroom-hero-content h1 {
+    font-size: 55px;
+    letter-spacing: -2px;
+  }
+
+  .bedroom-hero-content p {
+    font-size: 14px;
+  }
+
+  .bedroom-hero-scroll {
+    display: none;
+  }
+
+  .bedroom-intro {
+    display: block;
+
+    padding: 85px 7%;
+  }
+
+  .bedroom-intro-index {
+    margin-bottom: 45px;
+  }
+
+  .bedroom-intro-content h2 {
+    font-size: 43px;
+  }
+
+  .bedroom-editorial-image img {
+    min-height: 430px;
+  }
+
+  .bedroom-editorial-content {
+    padding: 65px 7%;
+  }
+
+  .bedroom-details {
+    gap: 10px;
+  }
+
+  .bedroom-products-section {
+    padding: 90px 6%;
+  }
+
+  .bedroom-products-heading {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .bedroom-products-heading > p {
+    margin-top: 20px;
+  }
+
+  .bedroom-filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .bedroom-categories {
+    width: 100%;
+    overflow-x: auto;
+
+    padding-bottom: 5px;
+  }
+
+  .bedroom-categories button {
+    white-space: nowrap;
+  }
+
+  .bedroom-sort {
+    align-self: flex-end;
+  }
+
+  .bedroom-product-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .bedroom-product-image {
+    height: 470px;
+  }
+
+  .bedroom-cart-btn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .bedroom-philosophy-image img {
+    min-height: 420px;
+  }
+
+  .bedroom-philosophy-content {
+    padding: 70px 7%;
+  }
+
+  .bedroom-guide {
+    padding: 90px 6%;
+  }
+
+  .bedroom-guide-card {
+    padding: 40px 20px;
+  }
+
+  .bedroom-cta {
+    min-height: 560px;
+    background-attachment: scroll;
+  }
+
+  .bedroom-cta-content h2 {
+    font-size: 54px;
+    letter-spacing: -2px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+  .bedroom-hero-content h1 {
+    font-size: 47px;
+  }
+
+  .bedroom-hero-content p {
+    font-size: 13px;
+  }
+
+  .bedroom-editorial-image img {
+    min-height: 350px;
+  }
+
+  .bedroom-editorial-label {
+    left: 18px;
+    bottom: 18px;
+  }
+
+  .bedroom-product-image {
+    height: 410px;
+  }
+
+  .bedroom-philosophy-image img {
+    min-height: 350px;
+  }
+
+  .bedroom-cta-content h2 {
+    font-size: 45px;
+  }
+}
