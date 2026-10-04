@@ -19,7 +19,7 @@ const diningProducts = [
     category: "Dining Tables",
     price: 589,
     image:
-      "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/a1/50/47/a15047a5e7c5f98243a834154efa04dd.jpg",
     tag: "Best Seller",
   },
   {
@@ -28,7 +28,7 @@ const diningProducts = [
     category: "Dining Chairs",
     price: 189,
     image:
-      "https://images.unsplash.com/photo-1551298370-9d3d53e1a9a1?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/e7/1e/6c/e71e6cdcc6528e13b4dcbea32d203aa7.jpg",
     tag: "New",
   },
   {
@@ -46,7 +46,7 @@ const diningProducts = [
     category: "Dining Chairs",
     price: 169,
     image:
-      "https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/1200x/b5/21/a4/b521a408d0863f8b1941c069867a3f34.jpg",
     tag: "New",
   },
   {
@@ -55,7 +55,7 @@ const diningProducts = [
     category: "Dining Sets",
     price: 1099,
     image:
-      "https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/09/eb/9f/09eb9f30b141079a4c25c42f7eaa555c.jpg",
     tag: "Featured",
   },
   {
@@ -64,7 +64,7 @@ const diningProducts = [
     category: "Dining Tables",
     price: 649,
     image:
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/1200x/b4/59/ce/b459ceea8a63d3b9eb091e537634759a.jpg",
     tag: "Popular",
   },
 ];
@@ -167,7 +167,7 @@ function Dining() {
       <section className="dining-featured">
         <div className="dining-featured-image">
           <img
-            src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1600&q=90"
+            src="https://i.pinimg.com/1200x/8d/e3/0a/8de30a3df638e260729468de435b07af.jpg"
             alt="LumaNest dining table"
           />
 

@@ -1,10 +1,25 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, ArrowUpRight, Play } from "lucide-react";
-
+import { ArrowRight, Pause, ArrowUpRight, Play } from "lucide-react";
+import { useRef, useState } from "react";
 import "./Home.css";
 
 function Home() {
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  const toggleVideo = () => {
+    if (!videoRef.current) return;
+
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    } else {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
   return (
+    
     <div className="home-page">
 
       {/* ================= HERO ================= */}
@@ -89,10 +104,10 @@ function Home() {
             pieces that belong in your life.
           </p>
 
-          <Link to="/about" className="text-link">
-            Discover LumaNest
-            <ArrowUpRight size={18} />
-          </Link>
+          <Link to="/about" className="discover-lumanest">
+  <span>Discover LumaNest</span>
+  <span className="discover-arrow">↗</span>
+</Link>
 
         </div>
 
@@ -193,7 +208,7 @@ function Home() {
           <Link to="/bedroom" className="collection-card wide">
 
             <img
-              src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=85"
+              src="https://i.pinimg.com/1200x/d6/0b/48/d60b48e92581ec9db883eb3729ac3891.jpg"
               alt="Modern bedroom"
             />
 
@@ -218,48 +233,57 @@ function Home() {
       {/* ================= FEATURE ================= */}
       <section className="feature-section">
 
-        <div className="feature-image">
+      <div className="feature-image">
 
-          <img
-            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=85"
-            alt="LumaNest interior"
-          />
+<video
+  ref={videoRef}
+  autoPlay
+  loop
+  muted
+  playsInline
+  preload="auto"
+  src="/video/3770034-hd_1920_1080_25fps.mp4"
+/>
 
-          <div className="play-button">
-            <Play size={20} fill="currentColor" />
-          </div>
+<button
+  type="button"
+  className="video-control"
+  onClick={toggleVideo}
+  aria-label={isPlaying ? "Pause video" : "Play video"}
+>
+  {isPlaying ? <Pause size={18} /> : <Play size={18} />}
+</button>
 
-        </div>
+</div>
 
+<div className="feature-content">
 
-        <div className="feature-content">
+  <span>DESIGN PHILOSOPHY</span>
 
-          <span>DESIGN PHILOSOPHY</span>
+  <h2>
+    Quiet design.
+    <br />
+    <i>Beautiful living.</i>
+  </h2>
 
-          <h2>
-            Quiet design.
-            <br />
-            <i>Beautiful living.</i>
-          </h2>
+  <p>
+    We believe the best interiors don't need to
+    shout. They speak through natural textures,
+    considered details and pieces that feel right
+    the moment you sit down.
+  </p>
 
-          <p>
-            We believe the best interiors don't need to
-            shout. They speak through natural textures,
-            considered details and pieces that feel right
-            the moment you sit down.
-          </p>
+  <Link to="/about" className="home-philosophy-btn">
+    <span>Discover Our Philosophy</span>
 
-          <Link to="/about" className="home-philosophy-btn">
-  <span>Discover Our Philosophy</span>
+    <span className="home-philosophy-arrow">
+      <ArrowUpRight size={18} />
+    </span>
+  </Link>
 
-  <span className="home-philosophy-arrow">
-    <ArrowUpRight size={18} />
-  </span>
-</Link>
+</div>
 
-        </div>
-
-      </section>
+</section>
 
 
       {/* ================= PRODUCTS ================= */}

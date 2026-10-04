@@ -22,7 +22,7 @@ function Chairs() {
       price: 18500,
       material: "Bouclé Fabric",
       image:
-        "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1000&q=85",
+        "https://i.pinimg.com/1200x/2d/54/dc/2d54dcdd48bb36100a8e5fe9db9aa239.jpg",
       tag: "Bestseller",
     },
     {
@@ -32,7 +32,7 @@ function Chairs() {
       price: 15900,
       material: "Natural Linen",
       image:
-        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=1000&q=85",
+        "https://i.pinimg.com/1200x/71/e6/ac/71e6ace47ea1f8f122390e67b154831d.jpg",
       tag: "New",
     },
     {
@@ -42,7 +42,7 @@ function Chairs() {
       price: 8900,
       material: "Solid Oak",
       image:
-        "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1000&q=85",
+        "https://i.pinimg.com/1200x/53/64/b8/5364b8c8c006c002c25b2653de13c1b3.jpg",
       tag: "",
     },
     {
@@ -52,7 +52,7 @@ function Chairs() {
       price: 21900,
       material: "Textured Cotton",
       image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=85",
+        "https://i.pinimg.com/1200x/3b/34/6b/3b346bc8f86dfcc5e8e789a4689db22e.jpg",
       tag: "",
     },
     {
@@ -62,7 +62,7 @@ function Chairs() {
       price: 9500,
       material: "Walnut Wood",
       image:
-        "https://images.unsplash.com/photo-1551298370-9d3d53740c72?auto=format&fit=crop&w=1000&q=85",
+        "https://i.pinimg.com/1200x/30/81/c3/3081c336379712a8e8d0f532f85c69e8.jpg",
       tag: "New",
     },
     {
@@ -72,7 +72,7 @@ function Chairs() {
       price: 16900,
       material: "Soft Velvet",
       image:
-        "https://images.unsplash.com/photo-1617364852223-75f57e78dc96?auto=format&fit=crop&w=1000&q=85",
+        "https://i.pinimg.com/736x/c8/6b/13/c86b13ab996f564c2cb89edf4fd808e4.jpg",
       tag: "",
     },
   ];

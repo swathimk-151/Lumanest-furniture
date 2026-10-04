@@ -17,7 +17,7 @@ const bedroomProducts = [
     category: "Beds",
     price: 899,
     image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/e7/13/24/e713249bc8a2d1becbb8b4ba33625de4.jpg",
     tag: "Best Seller",
   },
   {
@@ -26,7 +26,7 @@ const bedroomProducts = [
     category: "Nightstands",
     price: 249,
     image:
-      "https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/1200x/9a/fa/58/9afa5800060522933f207f7a52db463a.jpg",
     tag: "New",
   },
   {
@@ -35,7 +35,7 @@ const bedroomProducts = [
     category: "Beds",
     price: 1049,
     image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/ee/d0/69/eed069062100a2703e9372db2665253a.jpg",
     tag: "Featured",
   },
   {
@@ -44,16 +44,17 @@ const bedroomProducts = [
     category: "Nightstands",
     price: 229,
     image:
-      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/1200x/b4/1e/71/b41e71062a34642c3cb388977b56539b.jpg",
     tag: "Popular",
   },
+  
   {
     id: 5,
     name: "Oakline Wardrobe",
     category: "Storage",
     price: 1299,
     image:
-      "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/1200x/00/b3/5d/00b35d4513405ea13abd0dcb15a12815.jpg",
     tag: "New",
   },
   {
@@ -62,9 +63,37 @@ const bedroomProducts = [
     category: "Bedroom Seating",
     price: 429,
     image:
-      "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/1200x/3c/37/aa/3c37aa35729804762034de13fb8e32a5.jpg",
     tag: "Popular",
   },
+  {
+    id: 7,
+    name: "Rounded Bed",
+    category: "Beds",
+    price: 5000,
+    image:
+      "https://i.pinimg.com/736x/0a/08/e3/0a08e3f33707ec59048ba6b2eaaba044.jpg",
+    tag: "Featured",
+  },
+
+  {
+    id: 8,
+    name: "Round modern beside table",
+    category: "Nightstands",
+    price: 2000,
+    image:
+      "https://i.pinimg.com/1200x/e5/71/25/e571254b7fe67e8cd9709bd69f82fb41.jpg",
+    tag: "Featured",
+  },
+  {
+    id: 9,
+    name: "Vintage Wardrobe",
+    category: "Storage",
+    price: 6000,
+    image:
+      "https://i.pinimg.com/1200x/db/8d/38/db8d389d9be8947be08d0631dd7c3881.jpg",
+    tag: "Featured",
+  }
 ];
 
 const categories = [
@@ -176,7 +205,7 @@ function Bedroom() {
 
         <div className="bedroom-editorial-image">
           <img
-            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=90"
+            src="https://i.pinimg.com/736x/41/5d/03/415d03d97e76ad2c26da332c9c22bf08.jpg"
             alt="Luxury bedroom"
           />
 

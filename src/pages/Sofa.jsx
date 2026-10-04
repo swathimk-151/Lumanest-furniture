@@ -19,7 +19,7 @@ function Sofa() {
       price: 48900,
       material: "Soft Linen",
       image:
-        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=85",
+        "https://i.pinimg.com/736x/c8/9b/a4/c89ba41ce1360b39e64fd1e5e2512c41.jpg",
       tag: "Bestseller",
     },
     {
@@ -29,7 +29,7 @@ function Sofa() {
       price: 62900,
       material: "Bouclé Fabric",
       image:
-        "https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1000&q=85",
+        "https://i.pinimg.com/736x/7f/9f/f6/7f9ff6cf90a1a252da817094e425a4f7.jpg",
       tag: "New",
     },
     {
@@ -39,7 +39,7 @@ function Sofa() {
       price: 42900,
       material: "Premium Linen",
       image:
-        "https://images.unsplash.com/photo-1550254478-ead40cc54513?auto=format&fit=crop&w=1000&q=85",
+        "https://i.pinimg.com/736x/06/20/64/0620648cde0dc23d996c5a3056786457.jpg",
       tag: "",
     },
     {
@@ -49,7 +49,7 @@ function Sofa() {
       price: 55900,
       material: "Cotton Blend",
       image:
-        "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1000&q=85",
+        "https://i.pinimg.com/1200x/38/c9/7f/38c97f544b186acff07fd2c7cb171fb1.jpg",
       tag: "",
     },
     {
@@ -59,7 +59,7 @@ function Sofa() {
       price: 74900,
       material: "Textured Fabric",
       image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=85",
+        "https://i.pinimg.com/1200x/bc/61/0f/bc610fd683a0aeba6105778add52ecbd.jpg",
       tag: "New",
     },
     {
@@ -69,7 +69,7 @@ function Sofa() {
       price: 39900,
       material: "Natural Linen",
       image:
-        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=85",
+        "https://i.pinimg.com/736x/be/8f/12/be8f1230936c11ec60c7c1b6299505b8.jpg",
       tag: "",
     },
   ];
@@ -283,7 +283,7 @@ function Sofa() {
         <div className="sofa-design-image">
 
           <img
-            src="https://images.unsplash.com/photo-1550226891-ef816aed4a98?auto=format&fit=crop&w=1600&q=85"
+            src="https://i.pinimg.com/1200x/5f/ee/83/5fee83eaa59edf02d38faa53cb3aaf2f.jpg"
             alt="Sofa interior"
           />
 
